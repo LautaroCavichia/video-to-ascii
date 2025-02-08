@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
     }
 
     string videoPath = argv[1];
-    int resizedWidth = (argc > 2) ? stoi(argv[2]) : 130;
+    int resizedWidth = (argc > 2) ? stoi(argv[2]) : 150;
 
     VideoCapture cap(videoPath);
     if (!cap.isOpened()) {
@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
 
     int width = cap.get(CAP_PROP_FRAME_WIDTH);
     int height = cap.get(CAP_PROP_FRAME_HEIGHT);
-    int resizedHeight = resizedWidth * height / width;
+    int resizedHeight = resizedWidth * height / width * 0.55;
 
     Mat frame, grayFrame, resizedFrame;
 
