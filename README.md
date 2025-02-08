@@ -2,6 +2,9 @@
 
 This C++ program converts a video into an ASCII animation in the terminal using OpenCV.
 
+![Screenshot 2025-02-08 at 08 59 43](https://github.com/user-attachments/assets/10680537-0b7e-4012-9144-ec939e6fa5af)
+
+
 ## Requirements
 
 - OpenCV 4 installed
